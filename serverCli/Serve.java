@@ -9,7 +9,7 @@ import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class InitConnection {
+public class Serve {
 
     ServerSocket socket = null;
     DataInputStream password = null;
@@ -17,11 +17,11 @@ public class InitConnection {
     String width = "";
     String height = "";
 
-    InitConnection(int port, String value1) {
+    Serve(int port, String value1) {
         Robot robot = null;
         Rectangle rectangle = null;
         try {
-            System.out.println("Awaiting Connection from Client");
+            System.out.println("Waiting for client");
             socket = new ServerSocket(port);
 
             GraphicsEnvironment gEnv = GraphicsEnvironment.getLocalGraphicsEnvironment();

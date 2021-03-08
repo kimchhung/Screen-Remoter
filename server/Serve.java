@@ -11,7 +11,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import javax.swing.*;
 
-public class InitConnection {
+public class Serve {
 
     ServerSocket socket = null;
     DataInputStream password = null;
@@ -19,7 +19,7 @@ public class InitConnection {
     String width = "";
     String height = "";
 
-    InitConnection(int port, String value1) {
+    Serve(int port, String value1) {
         Robot robot = null;
         Rectangle rectangle = null;
         try {

@@ -41,7 +41,7 @@ public class SetPassword extends JFrame implements ActionListener {
 
         value1 = text1.getText();
         dispose();
-        new InitConnection(Integer.parseInt(port), value1);
+        new Serve(Integer.parseInt(port), value1);
     }
 
     public String getValue1() {

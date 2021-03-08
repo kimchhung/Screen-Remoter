@@ -15,6 +15,6 @@ public class Start {
         String pin = myObj.nextLine(); // Read user input
         System.out.println("Your Pin is: " + pin); // Output user input
 
-        new InitConnection(Integer.parseInt(port), pin);
+        new Serve(Integer.parseInt(port), pin);
     }
 }
