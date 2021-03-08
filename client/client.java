@@ -3,12 +3,12 @@ import java.net.Socket;
 
 import javax.swing.JOptionPane;
 
-public class Start {
+public class client {
     static String port = "3210";
 
     public static void main(String args[]) {
         String ip = JOptionPane.showInputDialog("Server IP Address");
-        new Start().initialize(ip, Integer.parseInt(port));
+        new client().initialize(ip, Integer.parseInt(port));
     }
 
     public void initialize(String ip, int port) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Start {
+public class Server {
     public static void main(String[] args) {
         // SetPassword frame1 = new SetPassword();
         // frame1.setSize(300, 80);

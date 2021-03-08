@@ -24,7 +24,6 @@ class CreateFrame extends Thread {
     private JPanel cPanel = new JPanel();
 
     public CreateFrame(Socket cSocket, String width, String height) {
-
         this.width = width;
         this.height = height;
         this.cSocket = cSocket;
@@ -39,11 +38,13 @@ class CreateFrame extends Thread {
 
         // Show thr frame in maximized state
 
-        frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH); // CHECK THIS LINE
+        // frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH); //
+        // // CHECK THIS LINE
+        frame.setSize(800, 600);
         frame.setVisible(true);
         interFrame.setLayout(new BorderLayout());
         interFrame.getContentPane().add(cPanel, BorderLayout.CENTER);
-        interFrame.setSize(100, 100);
+        interFrame.setSize(800, 600);
         desktop.add(interFrame);
 
         try {
